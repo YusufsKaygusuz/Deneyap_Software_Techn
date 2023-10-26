@@ -1,10 +1,10 @@
 #include <iostream>
-/*
+
     iostream is standart library header file that contains definitions
     of the standard input and output streams.
 
-    iostream, standart giriş ve çıkış akışlarının tanımlarını içeren
-    standart kütüphane başlık dosyasıdır
+    iostream, standart giriÃ¾ ve Ã§Ã½kÃ½Ã¾ akÃ½Ã¾larÃ½nÃ½n tanÃ½mlarÃ½nÃ½ iÃ§eren
+    standart kÃ¼tÃ¼phane baÃ¾lÃ½k dosyasÃ½dÃ½r
 
 
 int main()
@@ -12,8 +12,8 @@ int main()
     int sayi;
     sayi = 5;
 
-    //std::cout, iostream içinde tanımlanan standart çıktı
-    //akışı nesnesidir.
+    //std::cout, iostream iÃ§inde tanÃ½mlanan standart Ã§Ã½ktÃ½
+    //akÃ½Ã¾Ã½ nesnesidir.
     std::cout << "The current value is " << std::endl;
     std::cout << sayi;
 
@@ -61,12 +61,12 @@ using namespace std;
 int main()
 {
     char harf = 'a';
-    cout<< "a'nın asci karşılığı: " << harf;
+    cout<< "a'nÃ½n asci karÃ¾Ã½lÃ½Ã°Ã½: " << harf;
     return 0;
 
     char harf = 'a';
     int ascii_deger = static_cast<int>(harf);
-    cout << "a'nın ASCII karşılığı: " << ascii_deger;
+    cout << "a'nÃ½n ASCII karÃ¾Ã½lÃ½Ã°Ã½: " << ascii_deger;
     return 0;
 }
 
@@ -79,7 +79,7 @@ int main()
     int yas = 15;
     int kilo = 48;
     int boy = 176;
-    cout<< "Benim yaşım: " << yas << endl;
+    cout<< "Benim yaÃ¾Ã½m: " << yas << endl;
     cout<< "Benim kilom: " << kilo << endl;
     cout<< "Benim boyum: " << boy << endl;
 
@@ -100,7 +100,6 @@ int main()
 
 }
 
-*/
 
 
 #include <iostream>
@@ -125,4 +124,110 @@ int main()
 
     return 0;
 }
+
+
+/*-- Week 4 --*/
+#include <iostream>
+using namespace std;
+int main()
+{
+ char islem;
+ cin >> islem;
+
+ if(islem == '+')
+ cout << "Toplama islemi";
+
+ else if(islem == '-')
+ cout << "Cikarma islemi";
+
+ else if(islem == '*')
+ cout << "Carpma islemi";
+
+ else if(islem == '/')
+ cout << "Bolme islemi";
+
+ else
+ cout << "Hatali giris.";
+}
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+ char islem;
+ cin >> islem;
+ switch(islem)
+ {
+ case '+':
+ cout << "Toplama islemi";
+ break;
+ case '-':
+ cout << "Cikarma islemi";
+ break;
+ case '*':
+ cout << "Carpma islemi";
+ break;
+ case '/':
+ cout << "Bolme islemi";
+ break;
+ default:
+ cout << "Hatali giris.";
+ }
+ return 0;
+}
+
+
+#include <iostream>
+ using namespace std;
+
+ int main()
+ {
+      int sayi;
+      cin >> sayi;
+
+      if(sayi >= 0)
+      {
+          if(sayi%3 == 0)
+              cout << "Sayi 3 ile tam bolunur.";
+          else
+              cout << "Sayi 3 ile tam bolunemez.";
+      }
+      else
+      {
+          cout << "Negatif sayi girdiniz.";
+      }
+      return 0;
+  }
+
+
+
+#include <iostream>
+ using namespace std;
+
+ int main()
+ {
+      int sicaklik;
+      cin >> sicaklik;
+
+      if(sicaklik < 0)
+      {
+         cout << "Kati";
+      }
+      else if (sicaklik > 0 && sicaklik <100)
+      {
+          cout << "sÄ±vÄ±";
+      }
+      else if (sicaklik > 100 && sicaklik <1000)
+      {
+          cout << "gaz";
+      }
+      else
+      {
+          cout << "plazma";
+      }
+
+
+      return 0;
+  }
 
