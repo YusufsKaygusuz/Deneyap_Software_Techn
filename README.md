@@ -1,1 +1,1 @@
-# Deneyap-Week-3
+# Deneyap Yazılım Tekonolileri
