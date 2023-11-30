@@ -47,3 +47,67 @@ char getRandomChar() {
     
     return characters[randomCharacter];
 }
+
+
+// Class Example
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Araba {
+public:
+    string marka;
+    string model;
+    float fiyat;
+    int hiz;
+
+    void hizlanma();
+    void yavaslama();
+    void bilgileriGoster();
+};
+
+void Araba::hizlanma() {
+    hiz = hiz + 10;
+    cout << "Araba hızlanıyor." << endl;
+}
+
+void Araba::yavaslama() {
+    hiz = hiz - 10;
+    cout << "Araba yavaşlıyor." << endl;
+}
+
+void Araba::bilgileriGoster() {
+    cout << "Araba Bilgileri:" << endl;
+    cout << "Marka: " << marka << endl;
+    cout << "Model: " << model << endl;
+    cout << "Fiyat: " << fiyat << " TL" << endl;
+    cout << "Hız: " << hiz << " km/h" << endl;
+}
+
+int main() {
+    Araba araba1;
+    araba1.marka = "Audi";
+    araba1.model = "Corolla";
+
+    araba1.fiyat = 150000.0;
+    araba1.hiz = 60;
+
+    // Arabanın bilgilerini ekrana yazdır
+    araba1.bilgileriGoster();
+        
+    cout <<"\n";
+    // Hızlanma işlemi
+    araba1.hizlanma();
+    araba1.bilgileriGoster();
+    cout <<"\n";
+
+    // Yavaşlama işlemi
+    araba1.yavaslama();
+    araba1.bilgileriGoster();
+
+    return 0;
+}
+
+
+
