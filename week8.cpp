@@ -1,4 +1,4 @@
-// Create a Strong Password
+// Create a Strong Password Example 8.1
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -49,7 +49,47 @@ char getRandomChar() {
 }
 
 
-// Class Example
+
+
+
+
+// Class Example Example 8.2
+#include <iostream>
+using namespace std;
+
+class Dikdortgen {
+    public:
+    Dikdortgen(double uzunluk, double genislik) : uzunluk_(uzunluk), genislik_(genislik){}
+    
+    double cevreHesapla() const{
+        return 2* (uzunluk_ + genislik_);
+    }
+    
+    double alanHesapla() const {
+        return uzunluk_ * genislik_;
+    }
+    
+    private:
+    double uzunluk_;
+    double genislik_;
+};
+
+
+int main() {
+    Dikdortgen dikt1(5.0, 3.0);
+    
+    // Çevre ve alan hesaplamalarını ekrana yazdırma
+    cout << "Dikdörtgen Çevresi: " << dikt1.cevreHesapla() << endl;
+    
+    cout << "Dikdörtgen Alanı: " << dikt1.alanHesapla() << endl;
+
+    return 0;
+}
+
+
+
+
+// Class Example Example 8.3
 
 #include <iostream>
 #include <string>
@@ -108,6 +148,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
