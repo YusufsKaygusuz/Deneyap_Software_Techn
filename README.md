@@ -7,7 +7,7 @@
 | Week 3 | [**Değişken ve Veri Tiplerini Tanıyalım**](#week-3-değişken-ve-veri-tiplerini-tanıyalım) |
 | Week 4 | [**Karar Verme Yapılarına Giriş If-Else if-else**](#week-4-karar-verme-yapılarına-giriş-if-else-if-else) |
 | Week 5 | [**Döngülere Giriş For Döngüsü & Switch-case**](#week-5-döngülere-giriş-for-döngüsü--switch-case) |
-| Week 6 | [**Diziler Konusuyla İlgili Örnek Kodlar**](#week-6-diziler-konusuyla-ilgili-örnek-kodlar)         |
+| Week 6 | [**Diziler Konusuyla İlgili Örnek Kodlar**](#week-6-diziler-konusuna-ait-örnek-kodlar)         |
 | Week 7 | [**Fonksiyonlara Giriş ve Örnekler**](#week-7-fonksiyonlara-giriş-ve-örnekler) |
 | Week 8 | [**Fonksiyon Pratiği ve Sınıflara (Class) Giriş**](#week-8-fonksiyon-pratiği-ve-sınıflara-class-giriş) |
 
@@ -23,7 +23,7 @@ Koşullu ifadelerle çalışmaya başlayacağımız bu hafta, if-else if-else gi
 
 Bu hafta, döngülerin temelini oluşturan for döngüsü ile programlarımızı tekrarlı işlemlere yönlendirmeyi öğreneceğiz. Ayrıca, switch-case yapısı ile farklı durumları ele alarak programlarımızı daha esnek hale getireceğiz.
 
-## Week 6: Diziler Konusuyla İlgili Örnek Kodlar
+## Week 6: Diziler Konusuna Ait Örnek Kodlar
 
 Diziler, benzer tipteki verileri tek bir değişken altında saklamamıza olanak tanıyan önemli bir konsepttir. Bu hafta, dizilerin tanımlanması, elemanlara erişim ve dizilerle ilgili temel işlemleri içeren örnek kodlarla pratik yapacağız.
 
