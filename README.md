@@ -15,11 +15,11 @@
 
 Bu hafta, C++ programlama dilindeki temel yapı taşlarından olan değişkenleri ve veri tiplerini tanıyacağız. Değişkenler, program içinde bilgi saklama ve işleme yeteneği kazandırır. Ayrıca, temel veri tipleri (int, float, char, vs.) üzerinde çalışarak programlama temellerini oluşturacağız.
 
-## Week 4: Karar Verme Yapılarına Giriş: If-Else if-else
+## Week 4: Karar Verme Yapılarına Giriş If-Else if-else
 
 Koşullu ifadelerle çalışmaya başlayacağımız bu hafta, if-else if-else gibi yapıları kullanarak programlara karar verme yeteneği kazandıracağız. Bu yapılar, programlarımızı çeşitli durumlara göre yönlendirmemizi sağlar.
 
-## Week 5: Döngülere Giriş: For Döngüsü & Switch-case
+## Week 5: Döngülere Giriş For Döngüsü & Switch-case
 
 Bu hafta, döngülerin temelini oluşturan for döngüsü ile programlarımızı tekrarlı işlemlere yönlendirmeyi öğreneceğiz. Ayrıca, switch-case yapısı ile farklı durumları ele alarak programlarımızı daha esnek hale getireceğiz.
 
