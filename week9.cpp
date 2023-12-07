@@ -42,9 +42,6 @@ int main() {
 
     // Parametre alan constructor çağrılır
     Ogrenci ogrenci2("Ahmet", 1995);
-    
-    // Copy constructor çağrılır
-    Ogrenci ogrenci3 = ogrenci2;
 
     // Nesnenin ömrü sona erdiğinde destructor çağrılır
     return 0;
