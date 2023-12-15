@@ -20,6 +20,7 @@
 | 📆 Week 6 | [**Diziler Konusuyla İlgili Örnek Kodlar**](#week-6-diziler-konusuna-ait-örnek-kodlar)         |
 | 📆 Week 7 | [**Fonksiyonlara Giriş ve Örnekler**](#week-7-fonksiyonlara-giriş-ve-örnekler) |
 | 📆 Week 8 | [**Fonksiyon Pratiği ve Sınıflara (Class) Giriş**](#week-8-fonksiyon-pratiği-ve-sınıflara-class-giriş) |
+| 📆 Week 9 | [**Sınıflarda (Class) Yapıcı ve Yıkıcı Metodlar**](#week-9-sınıflarda-class-yapıcı-ve-yıkıcı-metodlar) |
 
 ## Week 3: Değişken ve Veri Tiplerini Tanıyalım
 
@@ -44,3 +45,35 @@ Fonksiyonlar, kodunuzu modüler hale getirmenizi sağlayan ve belirli görevleri
 ## Week 8: Fonksiyon Pratiği ve Sınıflara (Class) Giriş
 
 Bu hafta, fonksiyonları daha derinlemesine anlamlandırarak pratiğini yapacak ve C++ dilindeki sınıflara (class) giriş yapacağız. Sınıflar, nesne yönelimli programlamanın temelini oluşturur ve veri yapısını daha organize bir şekilde yönetmemizi sağlar.
+
+## Week 9: Sınıflarda (Class) Yapıcı ve Yıkıcı Metodlar
+
+C++ dilinde constructor (kurucu fonksiyon) bir nesnenin oluşturulduğu anı temsil eden özel bir fonksiyondur. Bir sınıf tanımlandığında, bu sınıfa ait bir constructor tanımlanabilir ve bir nesne oluşturulduğunda otomatik olarak çağrılır. Constructor, sınıfın üye değişkenlerini başlatmak ve diğer başlangıç işlemlerini gerçekleştirmek için kullanılır.
+
+Deconstructor (yıkıcı fonksiyon) ise bir nesne yok edildiğinde çağrılan bir özel fonksiyondur. Sınıfın ömrü sona erdiğinde, deconstructor bellek yönetimi ve diğer temizlik işlemlerini gerçekleştirmek için kullanılır. Deconstructor, sınıfın bellek ve kaynak yönetimini düzgün bir şekilde tamamlamasına yardımcı olur.
+Örnek kullanım:
+```cpp
+#include <iostream>
+
+class MyClass {
+public:
+    // Constructor
+    MyClass() {
+        std::cout << "Constructor çağrıldı!" << std::endl;
+    }
+
+    // Deconstructor
+    ~MyClass() {
+        std::cout << "Deconstructor çağrıldı!" << std::endl;
+    }
+};
+
+int main() {
+    // Nesne oluşturulduğunda constructor çağrılır
+    MyClass myObject;
+
+    // Program sona erdiğinde deconstructor çağrılır
+    return 0;
+}
+```
+
