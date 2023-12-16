@@ -247,6 +247,57 @@ int main() {
 
 Bu hafta, fonksiyonları daha derinlemesine anlamlandırarak pratiğini yapacak ve C++ dilindeki sınıflara (class) giriş yapacağız. Sınıflar, nesne yönelimli programlamanın temelini oluşturur ve veri yapısını daha organize bir şekilde yönetmemizi sağlar.
 
+<h3></h3>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// MatematikIslemleri adlı sınıfın tanımlanması
+class MatematikIslemleri {
+public:
+    // Sınıf içindeki fonksiyonlar (üye fonksiyonlar)
+    int topla(int x, int y) {
+        return x + y;
+    }
+
+    int carp(int x, int y) {
+        return x * y;
+    }
+
+    double bol(double x, double y) {
+        // y değeri 0'dan farklı mı kontrolü. Eğer sıfır değilse bölme işlemi gerçekleşmeli.
+        if (y != 0.0) {
+            return x / y;
+        }
+        // y değeri 0'a eşitse (Bir sayının sıfıra bölünmesi sonucunda) tanımsızlık ortaya çıkar ve hata oluşur.
+        else {
+            cerr << "Hata: Sıfıra bölme!" << endl;
+            return 0.0;
+        }
+    }
+};
+
+int main() {
+    // MatematikIslemleri sınıfından bir nesne oluşturulması
+    MatematikIslemleri hesapMakinesi;
+
+    // Sınıfın fonksiyonlarını kullanma
+    int toplamSonucu = hesapMakinesi.topla(5, 3);
+    cout << "Toplam: " << toplamSonucu << endl;
+
+    int carpimSonucu = hesapMakinesi.carp(4, 6);
+    cout << "Çarpım: " << carpimSonucu << endl;
+
+    double bolumSonucu = hesapMakinesi.bol(9.0, 3.0);
+    std::cout << "Bölüm: " << bolumSonucu << endl;
+
+    return 0;
+}
+
+```
+
+
 ## Week 9: Sınıflarda (Class) Yapıcı ve Yıkıcı Metodlar
 
 C++ dilinde constructor (kurucu fonksiyon) bir nesnenin oluşturulduğu anı temsil eden özel bir fonksiyondur. Bir sınıf tanımlandığında, bu sınıfa ait bir constructor tanımlanabilir ve bir nesne oluşturulduğunda otomatik olarak çağrılır. Constructor, sınıfın üye değişkenlerini başlatmak ve diğer başlangıç işlemlerini gerçekleştirmek için kullanılır.
