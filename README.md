@@ -134,6 +134,53 @@ int main() {
 
 Diziler, benzer tipteki verileri tek bir değişken altında saklamamıza olanak tanıyan önemli bir konsepttir. Bu hafta, dizilerin tanımlanması, elemanlara erişim ve dizilerle ilgili temel işlemleri içeren örnek kodlarla pratik yapacağız.
 
+<h3>Dizi Tanımlama ve Elemanlara Erişim</h3>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Dizi tanımlama
+    int sayilar[5] = {1, 2, 3, 4, 5};
+
+    // Dizi elemanlarına erişim
+    for (int i = 0; i < 5; ++i) {
+        cout << "sayilar[" << i << "] = " << sayilar[i] << endl;
+    }
+
+    return 0;
+}
+```
+<h3>Dizi Boyutu ve Ortalama Hesaplama</h3>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Dizi tanımlama
+    double notlar[] = {75.5, 80.0, 90.5, 85.0, 88.5};
+
+    // Dizi boyutunu ogrenme
+    int dizininBoyutu = sizeof(notlar) / sizeof(notlar[0]);
+
+    // Dizi elemanlarına erişim ve toplam hesaplama
+    double toplam = 0.0;
+    for (int i = 0; i < dizininBoyutu; ++i) {
+        cout << "notlar[" << i << "] = " << notlar[i] << endl;
+        toplam += notlar[i];
+    }
+
+    // Ortalama hesaplama ve ekrana yazdırma
+    double ortalama = toplam / dizininBoyutu;
+    cout << "Not Ortalaması: " << ortalama << endl;
+
+    return 0;
+}
+
+```
+
 ## Week 7: Fonksiyonlara Giriş ve Örnekler
 
 Fonksiyonlar, kodunuzu modüler hale getirmenizi sağlayan ve belirli görevleri yerine getiren bloklardır. Bu hafta, fonksiyonların tanımlanması, çağrılması ve örneklerle pratiği üzerinde duracağız. Fonksiyonlar, kodun okunabilirliğini artırır ve tekrar kullanılabilirlik sağlar.
