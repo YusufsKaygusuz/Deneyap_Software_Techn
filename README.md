@@ -93,6 +93,43 @@ int main() {
 
 Bu hafta, döngülerin temelini oluşturan for döngüsü ile programlarımızı tekrarlı işlemlere yönlendirmeyi öğreneceğiz. Ayrıca, switch-case yapısı ile farklı durumları ele alarak programlarımızı daha esnek hale getireceğiz.
 
+```cpp
+#include <iostream>
+
+using namespace std; // std isim alanını kullan
+
+int main() {
+    // for döngüsü ile sayıları ekrana yazdırma
+    cout << "For Döngüsü İle Sayıları Yazdırma:" << endl;
+    for (int i = 1; i <= 5; ++i) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    // Kullanıcının seçtiği sayıya göre switch-case yapısı
+    cout << "Bir sayı giriniz (1-3 arasında): ";
+    int kullaniciSecimi;
+    cin >> kullaniciSecimi;
+
+    switch (kullaniciSecimi) {
+        case 1:
+            cout << "Birinci durum seçildi." << endl;
+            break;
+        case 2:
+            cout << "İkinci durum seçildi." << endl;
+            break;
+        case 3:
+            cout << "Üçüncü durum seçildi." << endl;
+            break;
+        default:
+            cout << "Geçersiz giriş. 1-3 arasında bir sayı giriniz." << endl;
+    }
+
+    return 0;
+}
+
+```
+
 ## Week 6: Diziler Konusuna Ait Örnek Kodlar
 
 Diziler, benzer tipteki verileri tek bir değişken altında saklamamıza olanak tanıyan önemli bir konsepttir. Bu hafta, dizilerin tanımlanması, elemanlara erişim ve dizilerle ilgili temel işlemleri içeren örnek kodlarla pratik yapacağız.
