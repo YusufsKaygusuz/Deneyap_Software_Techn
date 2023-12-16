@@ -26,6 +26,42 @@
 
 Bu hafta, C++ programlama dilindeki temel yapı taşlarından olan değişkenleri ve veri tiplerini tanıyacağız. Değişkenler, program içinde bilgi saklama ve işleme yeteneği kazandırır. Ayrıca, temel veri tipleri (int, float, char, vs.) üzerinde çalışarak programlama temellerini oluşturacağız.
 
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    // int: Tam sayı
+    int tamSayi = 42;
+
+    // float: Ondalıklı sayı (tek hassasiyet)
+    float ondalikliSayi = 3.14f;
+
+    // double: Ondalıklı sayı (çift hassasiyet)
+    double ciftHassasiyetliSayi = 2.71828;
+
+    // string: Metin dizisi
+    string metin = "Merhaba, dünya!";
+
+    // bool: Mantıksal değer (true/false)
+    bool dogruMu = true;
+
+    // char: Tek karakter
+    char karakter = 'A';
+
+    // Değişken değerlerini ekrana yazdırma
+    cout << "Tam Sayı: " << tamSayi << endl;
+    cout << "Ondalıklı Sayı: " << ondalikliSayi << endl;
+    cout << "Çift Hassasiyetli Sayı: " << ciftHassasiyetliSayi << endl;
+    cout << "Metin: " << metin << endl;
+    cout << "Mantıksal Değer: " << (dogruMu ? "true" : "false") << endl;
+    cout << "Karakter: " << karakter << endl;
+
+    return 0;
+}
+```
+
 ## Week 4: Karar Verme Yapılarına Giriş If-Else if-else
 
 Koşullu ifadelerle çalışmaya başlayacağımız bu hafta, if-else if-else gibi yapıları kullanarak programlara karar verme yeteneği kazandıracağız. Bu yapılar, programlarımızı çeşitli durumlara göre yönlendirmemizi sağlar.
