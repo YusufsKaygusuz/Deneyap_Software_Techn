@@ -9,8 +9,6 @@
 </p>
 
 
-
-
 ## 📚 İçindekiler
 | Hafta | Haftalık İçerik                             |
 |-------|--------------------------------------------|
@@ -184,6 +182,66 @@ int main() {
 ## Week 7: Fonksiyonlara Giriş ve Örnekler
 
 Fonksiyonlar, kodunuzu modüler hale getirmenizi sağlayan ve belirli görevleri yerine getiren bloklardır. Bu hafta, fonksiyonların tanımlanması, çağrılması ve örneklerle pratiği üzerinde duracağız. Fonksiyonlar, kodun okunabilirliğini artırır ve tekrar kullanılabilirlik sağlar.
+
+<h3>Temel Fonksiyon Tanımlama ve Çağrılma</h3>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// Fonksiyon tanımı
+void selamla() {
+    cout << "Merhaba! Bu bir fonksiyon." << endl;
+}
+
+int main() {
+    // Fonksiyon çağrısı
+    selamla();
+
+    return 0;
+}
+```
+
+<h3>Parametreli Fonksiyon ve Çağrılma</h3>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// Parametreli fonksiyon tanımı
+void kareAlVeYazdir(int sayi) {
+    int kare = sayi * sayi;
+    cout << sayi << " sayısının karesi: " << kare << endl;
+}
+
+int main() {
+    // Parametreli fonksiyon çağrısı
+    kareAlVeYazdir(5);
+    kareAlVeYazdir(8);
+
+    return 0;
+}
+```
+<h3>Fonksiyonlardan Değer Döndürme</h3>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// Fonksiyon tanımı
+int topla(int x, int y) {
+    return x + y;
+}
+
+int main() {
+    // Fonksiyon çağrısı ve değeri kullanma
+    int sonuc = topla(3, 4);
+    cout << "Toplam: " << sonuc << endl;
+
+    return 0;
+}
+
+```
 
 ## Week 8: Fonksiyon Pratiği ve Sınıflara (Class) Giriş
 
