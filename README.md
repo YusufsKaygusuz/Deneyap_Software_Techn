@@ -66,6 +66,29 @@ int main() {
 
 Koşullu ifadelerle çalışmaya başlayacağımız bu hafta, if-else if-else gibi yapıları kullanarak programlara karar verme yeteneği kazandıracağız. Bu yapılar, programlarımızı çeşitli durumlara göre yönlendirmemizi sağlar.
 
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Kullanıcıdan bir sayı girişi istenir
+    cout << "Bir sayı giriniz: ";
+    int sayi;
+    cin >> sayi;
+
+    // if-else if-else yapısı kullanılarak karar verme
+    if (sayi > 0) {
+        cout << "Girilen sayı pozitif." << endl;
+    } else if (sayi < 0) {
+        cout << "Girilen sayı negatif." << endl;
+    } else {
+        cout << "Girilen sayı sıfır." << endl;
+    }
+
+    return 0;
+}
+```
+
 ## Week 5: Döngülere Giriş For Döngüsü & Switch-case
 
 Bu hafta, döngülerin temelini oluşturan for döngüsü ile programlarımızı tekrarlı işlemlere yönlendirmeyi öğreneceğiz. Ayrıca, switch-case yapısı ile farklı durumları ele alarak programlarımızı daha esnek hale getireceğiz.
