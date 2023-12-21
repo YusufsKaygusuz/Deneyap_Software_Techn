@@ -59,3 +59,81 @@ int main() {
 }
 
 // Assignment 5 Question 3
+// --> Kodun sonuc degeri = 5 olmalı
+#include <iostream>
+using namespace std;
+
+int sayi=2;
+void fonksiyon1()
+{
+sayi = 5;
+}
+void fonksiyon2()
+{
+int sayi = 7;
+}
+int main()
+{
+fonksiyon1();
+fonksiyon2();
+cout << sayi;
+}
+
+// Assignment 5 Question 4
+#include <iostream>
+using namespace std;
+
+class Bahce {
+private:
+    double kenarUzunlugu;  // Kare şeklindeki bahçenin kenar uzunluğu
+public:
+    // Constructor
+    Bahce(double kenar) {
+        kenarUzunlugu = kenar;
+    }
+    // Alanı hesaplayan metot
+    double alanHesapla() {
+        return kenarUzunlugu * kenarUzunlugu;
+    }
+
+    // Çevreyi hesaplayan metot
+    double cevreHesapla() {
+        return 4 * kenarUzunlugu;
+    }
+
+    // Kenar uzunluğunu değiştiren metot
+    void kenarUzunluguDegistir(double yeniKenar) {
+        kenarUzunlugu = yeniKenar;
+    }
+};
+
+// Dışarıda tanımlanan fonksiyonlar
+
+void bahceBilgileriniYazdir(Bahce b) {
+    cout << "Bahçenin Alanı: " << b.alanHesapla() << " birim kare" << endl;
+    cout << "Bahçenin Çevresi: " << b.cevreHesapla() << " birim" << endl;
+}
+
+int main() {
+    double kenar1, kenar2;
+    cout << "1. bahçenin kenar uzunluğunu girin: ";
+    cin >> kenar1;
+
+    cout << "2. bahçenin kenar uzunluğunu girin: ";
+    cin >> kenar2;
+
+    Bahce bahce1(kenar1);
+    Bahce bahce2(kenar2);
+
+    cout << "1. Bahçe Bilgileri:" << endl;
+    bahceBilgileriniYazdir(bahce1);
+
+    cout << "\n2. Bahçe Bilgileri:" << endl;
+    bahceBilgileriniYazdir(bahce2);
+
+    return 0;
+}
+
+
+
+
