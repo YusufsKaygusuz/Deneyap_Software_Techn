@@ -135,5 +135,106 @@ int main() {
 }
 
 
+// Assignment 5 Question 5
+
+#include <iostream>
+using namespace std;
+
+class DaireHavuz {
+private:
+    double yaricap;  // Daire havuzunun yarıçapı
+
+public:
+    // Constructor
+    DaireHavuz(double r){
+        yaricap = r;
+    }
+
+    // Alanı hesaplayan metot
+    double alanHesapla() {
+        return 3.14 * yaricap * yaricap;
+    }
+
+    // Yarıçapı değiştiren metot
+    void yaricapDegistir(double yeniYaricap) {
+        yaricap = yeniYaricap;
+    }
+
+    // Yarıçapı getiren metot
+    double getYaricap() const {
+        return yaricap;
+    }
+};
+
+int main() {
+    double yaricap1, yaricap2;
+
+    cout << "1. Havuz için yarıçap girin: ";
+    cin >> yaricap1;
+
+    cout << "2. Havuz için yarıçap girin: ";
+    cin >> yaricap2;
+
+    DaireHavuz havuz1(yaricap1);
+    DaireHavuz havuz2(yaricap2);
+
+    cout << "\n1. Havuz Alanı: " << havuz1.alanHesapla() << " birim kare" << endl;
+    cout << "   Havuzun Yarıçapı: " << havuz1.getYaricap() << " birim" << endl;
+
+    cout << "\n2. Havuz Alanı: " << havuz2.alanHesapla() << " birim kare" << endl;
+    cout << "   Havuzun Yarıçapı: " << havuz2.getYaricap() << " birim" << endl;
+
+    return 0;
+}
+
+
+
+// Assignmet 5 Question 6
+
+#include <iostream>
+using namespace std;
+
+bool asalMi(int sayi) {
+    // 1 veya 2'den küçük olan sayılar asal değildir
+    if (sayi <= 1) return false;
+    if (sayi == 2) return true;
+
+    // 2'den başlayarak sayının yarısına kadar olan sayılarla bölünüp bölünmediğini kontrol et
+    for (int i = 2; i <= sayi / 2; i++) {
+        if (sayi % i == 0) {
+            return false;  // Sayı, i'ye tam bölünüyorsa asal değildir
+        }
+    }
+    return true;  // Eğer hiçbiriyle tam bölünmüyorsa asaldır
+}
+
+int main() {
+    int sayi;
+    cout << "Bir sayı girin: ";
+    cin >> sayi;
+
+    if (asalMi(sayi)) {
+        cout << sayi << " bir asal sayıdır." << endl;
+    } else {
+        cout << sayi << " bir asal sayı değildir." << endl;
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
